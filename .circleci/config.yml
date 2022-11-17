@@ -17,6 +17,10 @@ jobs:
       - run:
           name: "Build"
           command: "echo execute makefile"
+      - run:
+          name: run tests
+          command: pytest test.py 
+          
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
